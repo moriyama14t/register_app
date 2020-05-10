@@ -1,0 +1,11 @@
+<%- include('../partials/header') -%>
+<div class="container">
+    <form method="POST" action="/forget"  >
+        <h2>パスワードをお忘れの方</h2>
+        <input name="email" type="text" class="form-control" placeholder="メールアドレス"/>
+        <input name="question" type="text" class="form-control" placeholder="好きな食べ物(＊会員登録時に記載いただいた内容)"/>
+        <button class="btn btn-primary btn-block" type="submit">ログイン</button>
+        <div style="align-text:center;margin-bottom:10px;margin-top:15px">アカウントをお持ちでない方<a href='/register'>サインアップ</a></div>
+    </form>
+</div>
+<%- include('../partials/footer') -%>

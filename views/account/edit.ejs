@@ -1,0 +1,16 @@
+<%- include('../partials/header') -%>
+<div class="container">
+    <form class="login-form" method="POST" action="/edit"  >
+        <h2 class="form-heading">アカウント作成</h2>
+        <p>名前</p>
+        <input name="username" type="text" class="form-control" value="<%= user_name %>" />
+        <p>登録メールアドレス</p>
+        <input name="email" type="text" class="form-control" value="<%= user_email %>" />
+        <p>好きな食べ物</p>
+        <input name="question" type="text" class="form-control" value="<%= user_question %>"  />
+        <input name="password" type="password" class="form-control" placeholder="パスワード" />
+        <input name="passwordConfirm" type="password" class="form-control" placeholder="確認用パスワード" />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">編集</button>
+    </form>
+</div>
+<%- include('../partials/footer') -%>

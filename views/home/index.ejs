@@ -1,0 +1,17 @@
+<%- include('../partials/header') -%>
+<div class="text-center">
+  <form method="GET" action="/edit">
+    <h2>登録内容</h2>
+    <p>名前：<%= user_name %></p>
+    <p>登録メールアドレス：<%= user_email %></p>
+    <p>好きな食べ物：<%= user_question %></p>
+    <button class="btn btn-primary " type="submit">編集</button>
+  </form>
+  <form method="POST" action="/logout">
+    <button class="btn btn-primary " type="submit">ログアウト</button>
+  </form>
+  <form method="POST" action="/delete">
+    <button class="btn btn-primary " type="submit">アカウント削除</button>
+  </form>
+</div>
+<%- include('../partials/footer') -%>
