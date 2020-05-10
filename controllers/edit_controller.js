@@ -1,7 +1,6 @@
 var express = require('express');
 var Router = express.Router();
 var models = require('../models');
-var Sequelize = require('sequelize');
 var bcrypt = require('bcrypt');
 
 Router.use(function(req,res,next){

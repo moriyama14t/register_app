@@ -1,8 +1,6 @@
 var express = require('express');
 var Router = express.Router();
 var models = require('../models');
-var Sequelize = require('sequelize');
-var Op = Sequelize.Op;
 
 Router.get('/forget',function(req,res){
     res.render('account/forget');
@@ -11,10 +9,8 @@ Router.get('/forget',function(req,res){
 Router.post('/forget',function(req,res){
     var matched_users_promise = models.User.findAll({
         where: {
-        [Op.and]: {
             email: req.body.email,
             question: req.body.question
-            }
         }
     });
     matched_users_promise.then(function(users){ 

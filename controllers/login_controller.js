@@ -1,7 +1,6 @@
 var express = require('express');
 var Router = express.Router();
 var models = require('../models');
-var Sequelize = require('sequelize');
 var bcrypt = require('bcrypt');
 
 Router.get('/login',function(req,res){
@@ -10,9 +9,8 @@ Router.get('/login',function(req,res){
 
 Router.post('/login',function(req,res){
     var matched_users_promise = models.User.findAll({
-        where: Sequelize.and(
+        where: 
             {email: req.body.email},
-        )
     });
     matched_users_promise.then(function(users){ 
         if(users.length > 0){
