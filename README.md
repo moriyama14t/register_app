@@ -1,38 +1,38 @@
-### 課題ポートフォリオ
+# RegisterApp
  
-node.js・Expressを用いた「ログイン認証システム」の実装
+node.js・Expressを用いた「ログイン認証システム」の実装（課題ポートフォリオ）
+
+## 機能一覧
+*  ユーザー登録機能
+*　ログイン機能
+*　ログアウト機能
+*　ユーザー編集機能
+＊　ユーザー削除機能
+
+## 技術一覧
+*  プログラミング言語：Node.js v8.9.4
+*  フレームワーク：Expess.js v4.16.1
+*  データベース：Mysql２
+＊  orm:sequelize
+＊  テンプレート：ejs
+
+## 理解出来ていない箇所
+*  プロミス関数
  
-### 参考にした教材・サイト
+## 工夫した点
+*  ユーザー情報編集・削除追加
+＊  パスワードを忘れた際の秘密の質問項目追加
 
-*  Progate
-*  Node.js 超入門 Kindle版
-*  入門Node.jsプログラミング
-
-上記以外は、Qiita・StackOverflow等、検索をかけて取り組みました。
-
-### 期間(約１週間)
-
+## 期間(約１週間)
 *   Progate(１day)
 *   Node.js 超入門 Kindle版(1day)
 *   ポートフォリオ実装(３day〜)
 
-
-### 理解出来ていない箇所
+## 参考にした教材・サイト
+*  Progate
+*  Node.js 超入門 Kindle版
+＊  Qiita・StackOverflow等
  
-
-### 工夫した点
-
- 
-### これから実装していきたい機能
- 
- 
-```bash
-pip install huga_package
-```
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
+## これから実装していきたい機能
+*  フラッシュメッセージ機能
+*  ログアウト後のブラウザバック制御
