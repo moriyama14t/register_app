@@ -5,7 +5,7 @@ var bcrypt = require('bcrypt');
 
 Router.use(function(req,res,next){
     if(req.session.email == null || req.session.email.length ==0 ){
-        res.redirect('/login'); 
+        res.redirect('/'); 
         }
     else{
         next();
@@ -33,7 +33,7 @@ Router.post('/edit',function(req,res){
         newSession.username = req.body.username;
         newSession.email = req.body.email;
         newSession.question = req.body.question;
-        res.redirect('/');
+        res.redirect('/user');
     }); 
 });
 

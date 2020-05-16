@@ -10,7 +10,7 @@ Router.post('/delete',function(req,res){
         users.destroy();
     });
     req.session.destroy();
-    res.redirect('/register');
+    res.redirect('/');
 });
 
 

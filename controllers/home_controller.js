@@ -7,14 +7,14 @@ var Router = express.Router();
 
 Router.use(function(req,res,next){
     if(req.session.email == null || req.session.email.length ==0 ){
-        res.redirect('/login'); 
+        res.redirect('/'); 
         }
     else{
         next();
     }
 });
 
-Router.get('/',function(req,res){
+Router.get('/user',function(req,res){
     let username = req.session.username;
     let email = req.session.email;
     let question = req.session.question;

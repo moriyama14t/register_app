@@ -3,7 +3,7 @@ var Router = express.Router();
 var models = require('../models');
 var bcrypt = require('bcrypt');
 
-Router.get('/login',function(req,res){
+Router.get('/',function(req,res){
     res.render('account/login');
 });
 
@@ -20,7 +20,7 @@ Router.post('/login',function(req,res){
                 req.session.username=user.username;
                 req.session.question=user.question;
                 req.session.email = req.body.email;
-                res.redirect('/');
+                res.redirect('/user');
             }
             else{
                 res.redirect('/register');

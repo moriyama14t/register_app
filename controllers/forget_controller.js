@@ -20,7 +20,7 @@ Router.post('/forget',function(req,res){
                 req.session.username=user.username;
                 req.session.question=req.body.question;
                 req.session.email = req.body.email;
-                res.redirect('/');
+                res.redirect('/user');
         }else{
             res.redirect('/register');
         }

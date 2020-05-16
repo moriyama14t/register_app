@@ -27,7 +27,7 @@ Router.post('/register',function(req,res){
                 newSession.username = req.body.username;
                 newSession.email = req.body.email;
                 newSession.question = req.body.question;
-                res.redirect('/');
+                res.redirect('/user');
             });
         }
         else{

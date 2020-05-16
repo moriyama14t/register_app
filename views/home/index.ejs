@@ -1,17 +1,22 @@
 <%- include('../partials/header') -%>
-<div class="text-center">
+<div class="container" style="width: 30%;">
   <form method="GET" action="/edit">
+    <div style="text-align:center;">
     <h2>登録内容</h2>
-    <p>名前：<%= user_name %></p>
-    <p>登録メールアドレス：<%= user_email %></p>
-    <p>好きな食べ物：<%= user_question %></p>
-    <button class="btn btn-primary " type="submit">編集</button>
+  </div>
+      <p>名前</p>
+      <p><%= user_name %></p>
+      <p>メールアドレス</p>
+      <p><%= user_email %></p>
+      <p>好きな食べ物</p>
+      <p><%= user_question %></p>
+    <button class="btn btn-primary btn-block" type="submit">編集</button>
   </form>
   <form method="POST" action="/logout">
-    <button class="btn btn-primary " type="submit">ログアウト</button>
+    <button class="btn btn-primary btn-block" type="submit">ログアウト</button>
   </form>
   <form method="POST" action="/delete">
-    <button class="btn btn-primary " type="submit">アカウント削除</button>
+    <button class="btn btn-primary btn-block" type="submit">アカウント削除</button>
   </form>
 </div>
 <%- include('../partials/footer') -%>

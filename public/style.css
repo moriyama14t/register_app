@@ -1,9 +1,8 @@
-input{
-    margin-bottom: 15px
-    }
-h2,p,button{
-    text-align: center
+input,button{
+    margin-bottom: 15px;
     }
 .container{
-    width:50%
+    width:30%;
     }
+
+
