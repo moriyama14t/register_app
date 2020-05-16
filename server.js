@@ -29,6 +29,4 @@ app.use(express.static('public'));
 
 app.listen(port);
 
-console.log('Server running at http://127.0.0.1:3000');
-
 module.exports = app;
