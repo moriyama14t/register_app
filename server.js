@@ -20,6 +20,8 @@ app.use(require('./controllers/logout_controller'));
 app.use(require('./controllers/edit_controller'));
 app.use(express.static('public'));
 
+var validator = require('express-validator');
+
 app.listen(port);
 
 module.exports = app;

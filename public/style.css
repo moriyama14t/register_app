@@ -1,8 +1,11 @@
 input,button{
     margin-bottom: 15px;
-    }
+}
 .container{
     width:30%;
-    }
+}
+.error {
+    color: red;
+}
 
 
