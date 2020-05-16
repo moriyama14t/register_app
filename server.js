@@ -14,13 +14,6 @@ var deletion = require('./controllers/delete_controller');
 var edit = require('./controllers/edit_controller');
 var port = process.env.PORT || 3000;
 
-const connection = mysql.createConnection({
-    host: "us-cdbr-east-06.cleardb.net",
-    user: "be8a596215c850",
-    password: "e7b5f1d1",
-    database: "heroku_365304d3ec20ceb"
-});
-
 app.set('view engine','ejs');
 app.use(cookieParser());
 app.use(bodyParser.json());
