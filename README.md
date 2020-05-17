@@ -1,6 +1,7 @@
 # RegisterApp
  
 node.js・Expressを用いた「ログイン認証システム」の実装（課題ポートフォリオ）
+
 （https://register-apps.herokuapp.com/）
 
 ## 機能一覧
@@ -29,13 +30,17 @@ node.js・Expressを用いた「ログイン認証システム」の実装（課
 
 ## これから実装していきたい機能
 *  フラッシュメッセージ機能
-*  ログアウト後のブラウザバック制御（ログアウトはできているが登録者情報が戻って見れてしまっている）
-*  バリデーション機能（メールアドレスやパスワード文字数制限等）
-*  Azureデプロイ
+*  ログアウト後のブラウザバック制御
 
+（ログアウトはできているが登録者情報が戻って見れてしまっている）
+*  Azureデプロイ
 
 ## 参考にした教材・サイト
 *  Progate
 *  Node.js 超入門 Kindle版
 *  Qiita・StackOverflow等
+
+## Qiitaへのメモ投稿
+*  プログラミング初心者がGitの使い方をまとめてみた(https://qiita.com/moriyama14t/items/7fc7fd6bd6603bad30f1)
+*  [javascript]初心者が関数・コールバック関数についてをまとめてみた(https://qiita.com/moriyama14t/items/453bfdfe394e654daace)
 
