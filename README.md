@@ -1,8 +1,8 @@
 # RegisterApp
- 
-node.js・Expressを用いた「ログイン認証システム」の実装（課題ポートフォリオ）
 
-（https://register-apps.herokuapp.com/）
+[RegisterApp](https://register-apps.herokuapp.com/)
+
+node.js・Expressを用いた「ログイン認証システム」の実装（課題ポートフォリオ）
 
 ## 機能一覧
 *  ユーザー登録機能
@@ -37,6 +37,6 @@ node.js・Expressを用いた「ログイン認証システム」の実装（課
 *  Qiita・StackOverflow等
 
 ## Qiitaへのメモ投稿
-*  プログラミング初心者がGitの使い方をまとめてみた(https://qiita.com/moriyama14t/items/7fc7fd6bd6603bad30f1)
-*  [javascript]初心者が関数・コールバック関数についてをまとめてみた(https://qiita.com/moriyama14t/items/453bfdfe394e654daace)
+*  [プログラミング初心者がGitの使い方をまとめてみた](https://qiita.com/moriyama14t/items/7fc7fd6bd6603bad30f1)
+*  [[javascript]初心者が関数・コールバック関数についてをまとめてみた](https://qiita.com/moriyama14t/items/453bfdfe394e654daace)
 
