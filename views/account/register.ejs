@@ -1,5 +1,6 @@
 <%- include('../partials/header') -%>
 <div class="container"style="width: 30%">
+  <div class="error">
   <% if(errors) { %>
     <ul>
         <% for (let n in errors) { %>
@@ -9,6 +10,7 @@
         <% } %>
     </ul>
   <% } %>
+</div>
   <form class="login-form" method="POST" action="/register"  >
     <h2 class="form-heading">アカウント作成</h2>
     <input name="username" type="text" class="form-control" placeholder="名前" />

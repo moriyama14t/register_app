@@ -20,14 +20,11 @@ Router.post('/register', RegisterValidator, (req, res) => {
             email: req.body.email,
             question: req.body.question,
             password: req.body.password,
-            errors: errors_array,
+            errors: errors_array
         });
     }else{
         var matched_users_promise = models.User.findAll({
-            where:  (
-                    {username: req.body.username},
-                    {email: req.body.email}
-                )
+            where: {email: req.body.email}
         });
         matched_users_promise.then(function(users){ 
             if(users.length == 0){
