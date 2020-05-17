@@ -15,7 +15,7 @@ node.js・Expressを用いた「ログイン認証システム」の実装（課
 *  プログラミング言語：Node.js v8.9.4
 *  フレームワーク：Expess.js v4.16.1
 *  データベース：MySQL
-*  orm:sequelize
+*  orm:sequelize　v5.21.7
 *  インフラ：heroku 
 *  テンプレート：ejs
 
