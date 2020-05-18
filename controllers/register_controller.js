@@ -3,10 +3,9 @@ var Router = express.Router();
 var models = require('../models');
 var bcrypt = require('bcrypt');
 var session = require('express-session');
-var error = error
 
 Router.get('/register',function(req,res){  
-    res.render('account/register',{errors: "",error: ""});
+    res.render('account/register',{errors: ""});
 });
 
 const { validationResult } = require('express-validator');
@@ -43,9 +42,9 @@ Router.post('/register', RegisterValidator, (req, res) => {
                 });
             }
             else{
-                res.render('account/register');
+                res.render('account/register',{errors: ""});
             }
-        })
+        });
     };
 });
 

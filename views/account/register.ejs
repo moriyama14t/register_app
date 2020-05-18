@@ -11,10 +11,11 @@
     </ul>
   <% } %>
 </div>
+
   <form class="login-form" method="POST" action="/register"  >
     <h2 class="form-heading">アカウント作成</h2>
     <input name="username" type="text" class="form-control" placeholder="名前" />
-    <input name="email" type="text" class="form-control" placeholder="メールアドレス" />
+    <input name="email" type="text" class="form-control" placeholder="メールアドレス(*登録済みアドレスは使えません)" />
     <input name="question"  type="text" class="form-control" placeholder="好きな食べ物(＊パスワードを忘れた際に必要になります)" />
     <input name="password" type="password" class="form-control" placeholder="パスワード" />
     <input name="passwordConfirm" type="password" class="form-control" placeholder="確認用パスワード" />
