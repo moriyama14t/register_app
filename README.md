@@ -1,7 +1,8 @@
-# RegisterApp
- 
+# ポートフォリオ
+
+[RegisterApp](https://register-apps.herokuapp.com/)
+
 node.js・Expressを用いた「ログイン認証システム」の実装（課題ポートフォリオ）
-（https://register-apps.herokuapp.com/）
 
 ## 機能一覧
 *  ユーザー登録機能
@@ -14,14 +15,12 @@ node.js・Expressを用いた「ログイン認証システム」の実装（課
 *  プログラミング言語：Node.js v8.9.4
 *  フレームワーク：Expess.js v4.16.1
 *  データベース：MySQL
-*  orm:sequelize
+*  orm:sequelize v5.21.7
 *  インフラ：heroku 
 *  テンプレート：ejs
 
 ## 理解出来ていない・理解が曖昧な箇所
 *  プロミス関数(わかりそうで理解できていない)
-*  gitコマンド（push、commit等は利用できている）
-*  データベース関連
  
 ## 工夫した点
 *  ユーザー情報編集・削除追加
@@ -29,13 +28,16 @@ node.js・Expressを用いた「ログイン認証システム」の実装（課
 
 ## これから実装していきたい機能
 *  フラッシュメッセージ機能
-*  ログアウト後のブラウザバック制御（ログアウトはできているが登録者情報が戻って見れてしまっている）
-*  バリデーション機能（メールアドレスやパスワード文字数制限等）
+*  ログアウト後のブラウザバック制御
 *  Azureデプロイ
-
 
 ## 参考にした教材・サイト
 *  Progate
 *  Node.js 超入門 Kindle版
+*  mdn webdocs
 *  Qiita・StackOverflow等
+
+## Qiitaへのメモ投稿
+*  [プログラミング初心者がGitの使い方をまとめてみた](https://qiita.com/moriyama14t/items/7fc7fd6bd6603bad30f1)
+*  [[javascript]初心者が関数・コールバック関数についてをまとめてみた](https://qiita.com/moriyama14t/items/453bfdfe394e654daace)
 
