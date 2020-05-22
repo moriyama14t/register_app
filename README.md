@@ -16,9 +16,7 @@ node.js・Expressを用いた「ログイン認証システム」の実装（課
 *  フレームワーク：Expess.js v4.16.1
 *  データベース：MySQL
 *  orm:sequelize v5.21.7
-*  インフラ：Azure(https://register-apps.azurewebsites.net/),
-
-heroku(https://register-apps.herokuapp.com/) 
+*  インフラ：Azure(https://register-apps.azurewebsites.net/),heroku(https://register-apps.herokuapp.com/) 
 *  テンプレート：ejs
 
 ## 理解出来ていない・理解が曖昧な箇所
