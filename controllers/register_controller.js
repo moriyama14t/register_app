@@ -5,7 +5,7 @@ var bcrypt = require('bcrypt');
 var session = require('express-session');
 
 Router.get('/register',function(req,res){  
-    res.render('account/register',{errors: ""});
+    res.render('account/register',{errors: "" ,error: ""});
 });
 
 const { validationResult } = require('express-validator');
@@ -19,7 +19,8 @@ Router.post('/register', RegisterValidator, (req, res) => {
             email: req.body.email,
             question: req.body.question,
             password: req.body.password,
-            errors: errors_array
+            errors: errors_array,
+            error: ""
         });
     }else{
         var matched_users_promise = models.User.findAll({
@@ -42,7 +43,8 @@ Router.post('/register', RegisterValidator, (req, res) => {
                 });
             }
             else{
-                res.render('account/register',{errors: ""});
+                res.render('account/register',{error: "メールアドレスが登録済みです" ,errors: ""});
+                
             }
         });
     };

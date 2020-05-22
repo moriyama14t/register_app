@@ -1,7 +1,5 @@
 <%- include('../partials/header') -%>
-<div class="container"style="width: 30%">
   <div class="error">
-  <% if(errors) { %>
     <ul>
         <% for (let n in errors) { %>
         <li>
@@ -9,9 +7,8 @@
         </li>
         <% } %>
     </ul>
-  <% } %>
-</div>
-
+    <h1><%= error %></h1>
+  </div>
   <form class="login-form" method="POST" action="/register"  >
     <h2 class="form-heading">アカウント作成</h2>
     <input name="username" type="text" class="form-control" placeholder="名前" />
@@ -22,5 +19,4 @@
     <button class="btn btn-lg btn-primary btn-block" type="submit">登録</button>
   </form>
       <div style="align-text:center;margin-bottom:10px;margin-top:15px">アカウントをお持の方<a href='/'>ログイン画面</a></div>
-</div>
 <%- include('../partials/footer') -%>
