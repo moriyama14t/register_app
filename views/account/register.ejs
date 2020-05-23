@@ -1,21 +1,12 @@
 <%- include('../partials/header') -%>
-  <div class="error">
-    <ul>
-        <% for (let n in errors) { %>
-        <li>
-            <%= errors[n].msg %>
-        </li>
-        <% } %>
-    </ul>
-    <h1><%= error %></h1>
-  </div>
   <form class="login-form" method="POST" action="/register"  >
     <h2 class="form-heading">アカウント作成</h2>
-    <input name="username" type="text" class="form-control" placeholder="名前" />
-    <input name="email" type="text" class="form-control" placeholder="メールアドレス(*登録済みアドレスは使えません)" />
-    <input name="question"  type="text" class="form-control" placeholder="好きな食べ物(＊パスワードを忘れた際に必要になります)" />
+    <input name="username" type="text" class="form-control" placeholder="名前"value="<%= data.username %>" />
+    <input name="email" type="text" class="form-control" placeholder="メールアドレス(*登録済みアドレスは使えません)"
+    value="<%= data.email %>" />
+    <input name="question" type="text" class="form-control" placeholder="好きな食べ物(＊パスワードを忘れた際に必要になります)" 
+    value="<%= data.question %>"/>
     <input name="password" type="password" class="form-control" placeholder="パスワード" />
-    <input name="passwordConfirm" type="password" class="form-control" placeholder="確認用パスワード" />
     <button class="btn btn-lg btn-primary btn-block" type="submit">登録</button>
   </form>
       <div style="align-text:center;margin-bottom:10px;margin-top:15px">アカウントをお持の方<a href='/'>ログイン画面</a></div>

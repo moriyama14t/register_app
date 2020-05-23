@@ -4,11 +4,11 @@
     <h2>登録内容</h2>
   </div>
       <p>名前</p>
-      <p><%= user_name %></p>
+      <p><%= data.username %></p>
       <p>メールアドレス</p>
-      <p><%= user_email %></p>
+      <p><%= data.email %></p>
       <p>好きな食べ物</p>
-      <p><%= user_question %></p>
+      <p><%= data.question %></p>
     <button class="btn btn-primary btn-block" type="submit">編集</button>
   </form>
   <form method="POST" action="/logout">

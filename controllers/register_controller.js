@@ -3,25 +3,26 @@ var Router = express.Router();
 var models = require('../models');
 var bcrypt = require('bcrypt');
 var session = require('express-session');
-
-Router.get('/register',function(req,res){  
-    res.render('account/register',{errors: "" ,error: ""});
-});
-
 const { validationResult } = require('express-validator');
 const RegisterValidator = require('../validators/register_validator');
+
+Router.get('/register',function(req,res){  
+    res.render('account/register',{data : ""});
+});
+
 Router.post('/register', RegisterValidator, (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         const errors_array = errors.array()
-        res.render('account/register', {
+        var data ={
             username: req.body.username,
             email: req.body.email,
             question: req.body.question,
             password: req.body.password,
             errors: errors_array,
             error: ""
-        });
+        }
+        res.render('account/register', {data});
     }else{
         var matched_users_promise = models.User.findAll({
             where: {email: req.body.email}
@@ -43,7 +44,14 @@ Router.post('/register', RegisterValidator, (req, res) => {
                 });
             }
             else{
-                res.render('account/register',{error: "メールアドレスが登録済みです" ,errors: ""});
+                var data ={
+                    username: req.body.username,
+                    email: req.body.email,
+                    question: req.body.question,
+                    password: req.body.password,            
+                    errors: "",
+                    error: "メールアドレスがすでに登録されています"}
+                res.render('account/register',{data});
                 
             }
         });

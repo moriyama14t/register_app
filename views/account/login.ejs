@@ -1,7 +1,7 @@
 <%- include('../partials/header') -%>
-  <form method="POST" action="/login"  >
+ <form method="POST" action="/login"  >
       <h2>ログイン</h2>
-      <input name="email" type="text" class="form-control" placeholder="メールアドレス"/>
+      <input name="email" type="text" class="form-control" placeholder="メールアドレス" value="<%= data.email %>"/>
       <input name="password" type="password" class="form-control" placeholder="パスワード"/>
       <button class="btn btn-primary btn-block" type="submit">ログイン</button>
       <div style="align-text:center;margin-bottom:10px;margin-top:15px">アカウントをお持ちでない方<a href='/register'>サインアップ</a></div>

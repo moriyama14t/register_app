@@ -15,6 +15,7 @@ Router.use(function(req,res,next){
 });
 
 Router.get('/user',function(req,res){
+    /*
     let username = req.session.username;
     let email = req.session.email;
     let question = req.session.question;
@@ -23,6 +24,13 @@ Router.get('/user',function(req,res){
         user_email: email,
         user_question: question,
     });
+    */
+   var data ={
+    username : req.session.username,
+    email : req.session.email,
+    question : req.session.question
+}
+res.render('home/index',{data: data})
 });
 
 
