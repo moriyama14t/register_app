@@ -21,8 +21,8 @@
       <h1>RegisterApp</h1>
     </div>
   </header>
-  <div class="container"style="width: 30%,color: red">
-    <div class="error">
+  <div class="container" style="width: 30%">
+    <div class="error" style= "color: red">
       <ul>
           <% for (let n in data.errors) { %>
           <li>
@@ -31,4 +31,4 @@
           <% } %>
       </ul>
       <p><%= data.error %></p>
-  </div>
+    </div>
