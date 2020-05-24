@@ -8,8 +8,7 @@ const EditValidator = require('../validators/edit_validator');
 Router.use(function(req,res,next){
     if(req.session.email == null || req.session.email.length ==0 ){
         res.redirect('/'); 
-        }
-    else{
+    }else{
         next();
     }
 });

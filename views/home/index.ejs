@@ -3,12 +3,12 @@
     <div style="text-align:center;">
     <h2>登録内容</h2>
   </div>
-      <p>名前</p>
-      <p><%= data.username %></p>
-      <p>メールアドレス</p>
-      <p><%= data.email %></p>
-      <p>好きな食べ物</p>
-      <p><%= data.question %></p>
+      <p>名前:</p>
+      <p style="font-weight: bold;"><%= data.username %></p>
+      <p>メールアドレス:</p>
+      <p style="font-weight: bold;"><%= data.email %></p>
+      <p>好きな食べ物:</p>
+      <p style="font-weight: bold;"><%= data.question %></p>
     <button class="btn btn-primary btn-block" type="submit">編集</button>
   </form>
   <form method="POST" action="/logout">

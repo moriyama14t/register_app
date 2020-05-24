@@ -47,5 +47,4 @@ Router.post('/forget',ForgetValidator,function(req,res){
     }    
 });
 
-
 module.exports = Router;

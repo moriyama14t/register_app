@@ -58,7 +58,4 @@ Router.post('/register', RegisterValidator, (req, res) => {
     };
 });
 
-
-
-
 module.exports = Router;

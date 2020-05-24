@@ -1,10 +1,15 @@
 <%- include('../partials/header') -%>
- <form method="POST" action="/login"  >
-      <h2>ログイン</h2>
-      <input name="email" type="text" class="form-control" placeholder="メールアドレス" value="<%= data.email %>"/>
-      <input name="password" type="password" class="form-control" placeholder="パスワード"/>
-      <button class="btn btn-primary btn-block" type="submit">ログイン</button>
-      <div style="align-text:center;margin-bottom:10px;margin-top:15px">アカウントをお持ちでない方<a href='/register'>サインアップ</a></div>
-      <div style="align-text:center;margin-bottom:10px;margin-top:15px">パスワードをお忘れの方<a href='/forget'>秘密の言葉でログイン</a></div>
+  <form method="POST" action="/login"  >
+    <h2>ログイン</h2>
+    <input name="email" type="text" class="form-control" placeholder="メールアドレス" value="<%= data.email %>"/>
+    <input name="password" type="password" class="form-control" placeholder="パスワード"/>
+    <button class="btn btn-primary btn-block" type="submit">ログイン</button>
   </form>
+  <div style="align-text:center;margin-bottom:10px;margin-top:15px">アカウントをお持ちでない方<a href='/register'>サインアップ</a></div>
+  <div style="align-text:center;margin-bottom:10px;margin-top:15px">パスワードをお忘れの方<a href='/forget'>秘密の言葉でログイン</a></div>
+  <div style="padding: 0.5em 1em; margin: 2em 0; font-weight: bold; border: solid 3px #000000;">
+    <h4>テストログイン</h4>
+    <p>[メールアドレス]: test@example.com</p>
+    <p>[パスワード]: password</p>
+  </div>
 <%- include('../partials/footer') -%>

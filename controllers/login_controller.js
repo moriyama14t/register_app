@@ -33,8 +33,7 @@ Router.post('/login',LoginValidator,function(req,res){
                     req.session.question=user.question;
                     req.session.email = req.body.email;
                     res.redirect('/user');
-                }
-                else{
+                }else{
                     var data ={
                         email: req.body.email,
                         errors: "",
@@ -42,13 +41,16 @@ Router.post('/login',LoginValidator,function(req,res){
                     }
                     res.render('account/login', {data});
                 }
-            }
-            else{
+            }else{
+                var data ={
+                    email: req.body.email,
+                    errors: "",
+                    error: "メールアドレスかパスワードが違います。または会員登録がされていません"
+                }
                 res.render('account/login', {data});
             }
         });
     }   
 });
-
 
 module.exports = Router;
