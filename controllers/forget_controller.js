@@ -3,6 +3,8 @@ var Router = express.Router();
 var models = require('../models');
 const { validationResult } = require('express-validator');
 const ForgetValidator = require('../validators/forget_validator');
+//上読み込み過ぎじゃないか？
+//エンジニアとディスカッション
 
 Router.get('/forget',function(req,res){
     res.render('account/forget', {data: ""});

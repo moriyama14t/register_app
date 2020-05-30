@@ -13,6 +13,10 @@ Router.use(function(req,res,next){
     }
 });
 
+Router.use(){
+    
+}
+
 Router.get('/edit',function(req,res){
     var data ={
         username : req.session.username,

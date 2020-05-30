@@ -26,7 +26,7 @@ Router.post('/login',LoginValidator,function(req,res){
         });
         matched_users_promise.then(function(users){ 
             if(users.length > 0){
-                let user = users[0];
+                let user = users[0];//インデックス番号・配列　オブジェクトは、{プロパティ1: 値1, プロパティ2: 値2}
                 let passwordHash = user.password;
                 if(bcrypt.compareSync(req.body.password,passwordHash)){
                     req.session.username=user.username;

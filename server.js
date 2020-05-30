@@ -9,9 +9,12 @@ var port = process.env.PORT || 3000;
 
 app.set('view engine','ejs');
 app.use(cookieParser());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());//body-parser による JSON データの読み込み
+app.use(bodyParser.urlencoded({extended: false}));//メディアタイプがapplication/x-www-form-urlencoded
+//のデータをパースするためにquerystringモジュールを使用するかqsモジュールを使用するかを真偽値として指定
 app.use(session({secret: 'randomstringsessionsecret'}));
+
+//クッキーとはクライアント側
 app.use(require('./controllers/forget_controller'));
 app.use(require('./controllers/delete_controller'));
 app.use(require('./controllers/register_controller'));
