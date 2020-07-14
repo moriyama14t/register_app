@@ -2,7 +2,7 @@
 
 [RegisterApp](https://register-apps.herokuapp.com/)
 
-node.js・Expressを用いた「ログイン認証システム」の実装（課題ポートフォリオ）
+node.js・Expressを用いた「ログイン認証システム」の実装
 
 ## 機能一覧
 *  ユーザー登録機能
@@ -19,8 +19,6 @@ node.js・Expressを用いた「ログイン認証システム」の実装（課
 *  インフラ：Azure(https://register-apps.azurewebsites.net/), heroku(https://register-apps.herokuapp.com/) 
 *  テンプレート：ejs
 
-## 理解出来ていない・理解が曖昧な箇所
-*  ユーザー登録やログイン機能に実装しているthenメソッドについて
  
 ## 工夫した点
 *  ユーザー情報編集・削除追加
