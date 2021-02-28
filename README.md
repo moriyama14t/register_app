@@ -13,7 +13,7 @@ node.js・Expressを用いた「ログイン認証システム」の実装
 ## 技術一覧
 *  プログラミング言語：Node.js v8.9.4
 *  フレームワーク：Expess.js v4.16.1
-*  データベース：MySQL
+*  データベース：PostgreSQL
 *  orm:sequelize v5.21.7
 *  テンプレート：ejs
 
